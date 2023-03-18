@@ -1,0 +1,577 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Helvetica', 'DIN', sans-serif;
+    letter-spacing: 0.1em;
+}
+@keyframes fadein-top {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+nav{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 100px;
+    animation: fadein-top 2s ease-out forwards;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+
+nav li{
+    list-style: none;
+    margin-left: 50px;
+    display: inline;
+}
+
+nav a{
+    color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #3BE4DE;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    animation: fadein-top 2s ease-out forwards;
+}
+.main img{
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    animation: fadein-top 2s ease-out forwards;
+}
+.main h2{
+    color: #DEEBEB;
+    position: absolute; /* h2をabsoluteにする */
+    bottom: 0; /* 下端に合わせる */
+    left: 0; /* 左端に合わせる */
+    margin: 20px; /* 余白を消す */
+    font-size: 100px;
+}
+.biography {
+    width: 100%;
+    height: 752px;
+    background-color: #011D2E;
+    margin-top: 0;
+    padding-top: 0;
+    animation: fadein-top 2s ease-out forwards;
+}
+.horizontal-line {
+    border-top: 2px solid #3BE4DE; /* 2pxの太さ、実線、黒色の線 */
+    width: 100%; /* 線の幅を100%に設定 */
+    height: 50%;
+    margin-top: -30px;
+  }
+.bio-top{
+    margin-top: 0px;
+    display: flex; /* h2タグと線要素を横並びにする */
+  align-items: center;
+}
+.bio-top h2 {
+    color: #DEEBEB;
+    margin-left: 90px;
+    font-size: 48px;
+    width: 516px;
+    height: 120px;
+    top: 30px;
+    padding-top: 30px;
+}
+
+.biography h2 {
+    color: #DEEBEB;
+    margin-left: 90px;
+    font-size: 48px;
+    width: 516px;
+    height: 120px;
+    top: 30px;
+}
+
+.bio-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 280px;
+    position: relative;
+}
+
+.bio-1 {
+    position: absolute;
+    top: -250px;
+    margin-left: 70%;
+    right: 0;
+}
+
+
+
+.bio-1 h2 {
+    color: #DEEBEB;
+    right: 0;
+    margin-left: 20px;
+}
+
+.bio-2 {
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.bio-2 p {
+    color: #DEEBEB;
+    top: 385px;
+    right: 105px;
+    margin-left: 90px;
+    letter-spacing: 0em;
+}
+
+.bio-3 {
+    margin-left: 90px;
+    margin-right: auto;
+}
+
+.bio-3 p {
+    color: #DEEBEB;
+    top: 385px;
+    right: 0;
+    letter-spacing: 0em;
+}
+
+.webdesign{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 568px;
+    background-color: #01253A;
+    animation: fadein-top 2s ease-out forwards;
+}
+.webdesign h2{
+    color: #DEEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 80px;
+}
+.web-box1{
+    flex: 1;
+}
+.web-box2{
+    flex: 1;
+}
+.graphic {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 847px;
+    background-color: #011D2E;
+    position: relative; /* 親要素をrelativeにする */
+    animation: fadein-top 2s ease-out forwards;
+}
+
+.graphic h2 {
+    position: absolute;
+    top: 150px;
+    color: #DEEBEB;
+    text-align: center;
+    font-size: 80px;
+}
+
+.gra-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    position: absolute; /* 子要素をabsoluteにする */
+    right: 0; /* 右端に寄せる */
+}
+
+.gra-img img {
+    width: 306px;
+    height: 433px;
+    object-fit: contain;
+}
+
+.gra-1{
+    color: #DEEBEB;
+}
+
+.gra-2 {
+    color: #DEEBEB;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 847px;
+    background-color: #01253A;
+    position: relative; 
+    animation: fadein-top 2s ease-out forwards;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    order: 2; /* 追加 */
+    top: 0; /* 追加 */
+  right: 0; /* 追加 */
+  transform: translateY(50%);
+}
+
+.text h2 {
+    color: #DEEBEB;
+    text-align: center;
+    font-size: 80px;
+    position: absolute; /* 追加 */
+  left: 50%; /* 追加 */
+  transform: translateX(-50%); /* 追加 */
+}
+
+.pho-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.pho-1 img {
+    width: 385px; /* 追加 */
+    height: 581px; /* 追加 */
+}
+.softwear{
+    position: relative;
+    width: 100%;
+    height: 433px;
+    background-color: #011D2E;
+    animation: fadein-top 2s ease-out forwards;
+}
+.softwear h2{
+    color: #DEEBEB;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+}
+.soft ul {
+    display: flex;
+    justify-content: center;
+}
+.soft li{
+    display: inline-block;
+    margin-right: 90px;
+}
+.soft li:last-child {
+    margin-right: 0;
+}
+.soft{
+    position: relative;
+    top: 250px;
+}
+.sns{
+    position: relative;
+    width: 100%;
+    height: 373px;
+    background-color: #01253A;
+    animation: fadein-top 2s ease-out forwards;
+}
+.sns h2{
+    color: #DEEBEB;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+}
+.sns-1 ul {
+    display: flex;
+    justify-content: center;
+}
+.sns-1 li{
+    display: inline-block;
+    margin-right: 90px;
+}
+.sns-1 li:last-child {
+    margin-right: 0;
+}
+.sns-1{
+    position: relative;
+    top: 200px;
+}
+footer{
+    width: 100%;
+    text-align: center; /* 可変にする場合、中央揃えにすると見栄えがよい */
+    color: #DEEBEB;
+    background-color: #011D2E;
+    font-size: 16px;
+    animation: fadein-top 2s ease-out forwards;
+}
+@media  screen  and (min-width: 599px){
+    .graphic h2{
+        left: 70px;
+    }
+    .gra-1 {
+        position: absolute;
+        left: 70px;
+        top: 500px;
+        text-align: center;
+    }
+
+.gra-2 {
+    position: absolute;
+    left: 70px;
+    top: 600px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 599px){
+    nav{
+        display: none;
+    }
+    .main{
+        position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+    }
+    .main img{
+        width: 1280%;
+        height: 700px;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    }
+    .biography {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+    .bio-top h2{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .bio-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .bio-1, .bio-2, .bio-3 {
+        width: 100%;
+        max-width: 800px;
+    }
+    .bio-1{
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+    }
+    .bio-1 h2{
+        display: none;
+    }
+    .bio-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio-2 p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .bio-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bio-3 p{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    .biography h2 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        width: 90%;
+    }
+    .webdesign {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+      
+      .web-box1 {
+        width: 50%;
+        padding: 0 1rem;
+      }
+      
+      .web-box2 {
+        width: 50%;
+        text-align: center;
+      }
+      
+      .web-box2 h2 {
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 30px;
+      }
+      
+      .graphic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+      }
+      
+      .graphic h2 {
+        text-align: center;
+        font-size: 40px;
+        top: 30px;
+        display: block;
+        left: 20px;
+      }
+      
+      .graphic {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 400px;
+      }
+      
+      .gra-img {
+        flex: 1;
+        text-align: right;
+        width: 124px;
+        height: 176px;
+        top: 150px;
+        justify-content:flex-end;
+        left: 225px;
+      }
+    .gra-img img{
+        width: 124px;
+        height: 176px;
+    }
+    .photo{
+        height: 400px;
+    }
+    .pho-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+    .pho-1 img {
+        width: 142px; /* 追加 */
+        height: 215px; /* 追加 */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text h2{
+        text-align: center;
+        font-size: 60px;
+
+    }
+    .softwear h2{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+      .soft{
+        width: 100%;
+        top: 150px;
+      }
+
+      .soft li{
+        margin-right: 1vh;
+        margin-bottom: 1vh;
+      }
+      .soft ul{
+        justify-content:flex-start;
+        width: 50%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+
+      .adobe{
+        width: 13vh;
+      }
+
+      .graphic{
+        display: block;
+      }
+      
+      .gra-1,
+      .gra-2 {
+        flex: 1;
+        text-align: left;
+        float: right;
+      }
+      .gra-1{
+        margin-top: 150px;
+        float: left;
+        width: 50%;
+        left: 20px;
+      }
+      .gra-2{
+        width: 50%;
+        margin-top: 30px;
+        margin-right: 185px;
+        float: right;
+        left: 20px;
+        /* clear: left; */
+      }
+}
+
+
+.text{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
