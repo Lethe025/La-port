@@ -33,10 +33,9 @@ nav ul{
     align-items: center; /* 縦方向の中央揃え */
 }
 
-
 nav li{
     list-style: none;
-    margin-left: 50px;
+    margin-left: 40px;
     display: inline;
 }
 
@@ -62,11 +61,41 @@ nav a:hover{
 }
 .main h2{
     color: #DEEBEB;
-    position: absolute; /* h2をabsoluteにする */
-    bottom: 0; /* 下端に合わせる */
-    left: 0; /* 左端に合わせる */
-    margin: 20px; /* 余白を消す */
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    margin: 20px; 
     font-size: 100px;
+}
+.webdesign{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: #01253A;
+    animation: fadein-top 2s ease-out forwards;
+}
+.webdesign h2{
+    color: #DEEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 80px;
+}
+.web-box1{
+    flex: 1;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-box1 img{
+    max-width: 100%;
+  width: 50%;
+}
+.web-box2{
+    flex: 1;
 }
 .biography {
     width: 100%;
@@ -153,117 +182,98 @@ nav a:hover{
     right: 0;
     letter-spacing: 0em;
 }
-
-.webdesign{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 568px;
-    background-color: #01253A;
-    animation: fadein-top 2s ease-out forwards;
-}
-.webdesign h2{
-    color: #DEEBEB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 80px;
-}
-.web-box1{
-    flex: 1;
-}
-.web-box2{
-    flex: 1;
-}
 .graphic {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 847px;
     background-color: #011D2E;
-    position: relative; /* 親要素をrelativeにする */
-    animation: fadein-top 2s ease-out forwards;
-}
-
-.graphic h2 {
-    position: absolute;
-    top: 150px;
-    color: #DEEBEB;
-    text-align: center;
-    font-size: 80px;
-}
-
-.gra-img {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+  .graphic  h2 {
+    color: #DEEBEB;
     width: 50%;
-    height: 100%;
-    position: absolute; /* 子要素をabsoluteにする */
-    right: 0; /* 右端に寄せる */
-}
-
-.gra-img img {
-    width: 306px;
-    height: 433px;
-    object-fit: contain;
-}
-
-.gra-1{
+    font-size: 50px;
+  }
+  
+  .gra-1 {
     color: #DEEBEB;
-}
-
-.gra-2 {
+    width: 50%;
+    margin-top: -310px;
+    margin-right: 350px;
+    float: right;
+  }
+  
+  .gra-2 {
     color: #DEEBEB;
-}
+    width: 50%;
+    margin-top: -350px;
+    margin-right: 350px;
+    float: right;
+  }
+  
+  .gra-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+  }
+  
+  #pos {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 .photo {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 847px;
+    position: relative;
     background-color: #01253A;
-    position: relative; 
-    animation: fadein-top 2s ease-out forwards;
 }
 
-.text {
+.pho-container {
     display: flex;
+    margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    order: 2; /* 追加 */
-    top: 0; /* 追加 */
-  right: 0; /* 追加 */
-  transform: translateY(50%);
-}
-
-.text h2 {
-    color: #DEEBEB;
-    text-align: center;
-    font-size: 80px;
-    position: absolute; /* 追加 */
-  left: 50%; /* 追加 */
-  transform: translateX(-50%); /* 追加 */
+    justify-content: space-between;
 }
 
 .pho-1 {
+    width: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.pho-1 img {
+    max-width: 100%;
+    width: 385px;
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DEEBEB;
+    font-size: 60px;
 }
-.pho-1 img {
-    width: 385px; /* 追加 */
-    height: 581px; /* 追加 */
-}
+
 .softwear{
     position: relative;
     width: 100%;
@@ -271,28 +281,27 @@ nav a:hover{
     background-color: #011D2E;
     animation: fadein-top 2s ease-out forwards;
 }
-.softwear h2{
-    color: #DEEBEB;
+.softwear .image-container {
     position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 90px;
+}
+.softwear h2{
     font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color: #DEEBEB;
+    padding-top: 70px;
 }
-.soft ul {
+
+.image-container {
     display: flex;
-    justify-content: center;
-}
-.soft li{
-    display: inline-block;
-    margin-right: 90px;
-}
-.soft li:last-child {
-    margin-right: 0;
-}
-.soft{
-    position: relative;
-    top: 250px;
+    justify-content: center; /* 横方向中央揃え */
+    align-items: center; /* 縦方向中央揃え */
+    gap: 90px;
+    position: absolute;
+    bottom: 90px; /* 下から 30px 離す */
+    left: 50%; /* 左右中央 */
+    transform: translateX(-50%); /* 左右中央揃え */
 }
 .sns{
     position: relative;
@@ -332,39 +341,35 @@ footer{
     font-size: 16px;
     animation: fadein-top 2s ease-out forwards;
 }
-@media  screen  and (min-width: 599px){
+@media screen and(min-device-width: 768px) 
+and (max-device-width: 1024px){
+    .gra-img{
+        width:310px;
+    }
     .graphic h2{
-        left: 70px;
+        font-size: 60px;
     }
-    .gra-1 {
-        position: absolute;
-        left: 70px;
-        top: 500px;
-        text-align: center;
+    .gra-1{
+        margin-top: -220px;
     }
-
-.gra-2 {
-    position: absolute;
-    left: 70px;
-    top: 600px;
-    text-align: center;
+    .gra-2{
+        margin-top: -120px;
+    }
 }
-}
-
 @media screen and (max-width: 599px){
     nav{
-        display: none;
+    display: none;
     }
     .main{
-        position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     }
     .main img{
-        width: 1280%;
-        height: 700px;
-        position: absolute;
+    width: 1280%;
+    height: 700px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -379,6 +384,9 @@ footer{
         width: 100vw;
         height: auto;
     }
+    .bio-top{
+        width: 100%;
+    }
     .bio-top h2{
         height: 40px;
         display: flex;
@@ -392,7 +400,7 @@ footer{
         width: 100%;
         height: auto;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     
     .bio-1, .bio-2, .bio-3 {
@@ -417,6 +425,7 @@ footer{
     .bio-2 p{
         margin-left: 50px;
         margin-right: 50px;
+        padding-top: 30px;
     }
     .bio-3{
         display: flex;
@@ -435,140 +444,86 @@ footer{
         margin: 0 auto;
         font-size: 30px;
         width: 90%;
+        margin-left: 0px;
     }
-    .webdesign {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
-      
-      .web-box1 {
-        width: 50%;
-        padding: 0 1rem;
-      }
-      
-      .web-box2 {
-        width: 50%;
+    .horizontal-line{
+        width: 100%;
+        margin-top: 20px;
+        right: 0;
+    }
+    .webdesign h2{
+        font-size: 40px;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+    .gra-1{
+        margin-right: 240px;
+    }
+    .graphic p{
+        font-size: 12px;
+    }
+    .gra-2{
+        margin-right: 240px;
+        margin-top: -140px;
+    }
+    .graphic h2{
+        padding-top: 10px;
+        width: auto;
         text-align: center;
-      }
-      
-      .web-box2 h2 {
-        display: inline-block;
-        margin: 0 auto;
-        font-size: 30px;
-      }
-      
-      .graphic {
+
+    }
+    .gra-img{
+        width: 180px;
+        padding-top: 30px;
+        padding-left: 190px;
+    }
+    
+    .photo{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        height: 600px;
-      }
-      
-      .graphic h2 {
-        text-align: center;
+    }
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 40px;
-        top: 30px;
-        display: block;
-        left: 20px;
+        top: 45px;
       }
       
-      .graphic {
+    .pho-1{
+        padding-left: 20px;
+        width: 200px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 400px;
-      }
-      
-      .gra-img {
-        flex: 1;
-        text-align: right;
-        width: 124px;
-        height: 176px;
-        top: 150px;
-        justify-content:flex-end;
-        left: 225px;
-      }
-    .gra-img img{
-        width: 124px;
-        height: 176px;
-    }
-    .photo{
-        height: 400px;
-    }
-    .pho-1 {
-        display: flex;
-        align-items: center;
         justify-content: center;
-        width: 50%;
-        height: 100%;
+        align-items: center;
     }
-    .pho-1 img {
-        width: 142px; /* 追加 */
-        height: 215px; /* 追加 */
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .pho-1 img{
+        padding-top: 110px;
     }
-    .text h2{
-        text-align: center;
-        font-size: 60px;
-
+    .softwear{
+        position: relative;
+        width: 100%;
+        height: 433px;
+        background-color: #011D2E;
+        animation: fadein-top 2s ease-out forwards;
+    }
+    .softwear .image-container {
+        bottom: 30px;
     }
     .softwear h2{
-        font-size: 30px;
+        font-size: 40px;
         width: 100%;
         text-align: center;
+        color: #DEEBEB;
+        padding-top: 60px;
     }
-      .soft{
-        width: 100%;
-        top: 150px;
-      }
-
-      .soft li{
-        margin-right: 1vh;
-        margin-bottom: 1vh;
-      }
-      .soft ul{
-        justify-content:flex-start;
-        width: 70%;
-        flex-wrap: wrap;
-        margin: 0 auto;
-      }
-
-      .adobe{
-        width: 13vh;
-      }
-
-      .graphic{
-        display: block;
-      }
-      
-      .gra-1,
-      .gra-2 {
-        flex: 1;
-        text-align: left;
-        float: right;
-      }
-      .gra-1{
-        margin-top: 150px;
-        float: left;
-        width: 50%;
-        left: 20px;
-      }
-      .gra-2{
-        width: 50%;
-        margin-top: 30px;
-        margin-right: 185px;
-        float: right;
-        left: 20px;
-        /* clear: left; */
-      }
-}
-
-
-.text{
-    justify-content: flex-end;
-    align-items: flex-start;
+    .sns-1 li{
+        margin-right: 40px;
+    }
 }
